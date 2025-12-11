@@ -1,0 +1,94 @@
+<!--
+Simple single-file landing page for "xojadevops".
+How to deploy:
+  - GitHub Pages: push this file to a repo and enable Pages in repo Settings (serve from main branch or /docs). 
+  - Netlify / Vercel / Cloudflare Pages: connect your Git repo and they will auto-deploy on push.
+
+This file is intentionally minimal, privacy-friendly, and professional (no photos). Replace the links in the CONTACT section.
+--><!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>xojadevops — DevOps, NetSec, WebDev</title>
+  <meta name="description" content="xojadevops — Network engineering, security, DevOps, web development, reverse engineering, data science. Ethical research, automation, and reliable systems." />
+  <style>
+    :root{--bg:#0f1113;--card:#0f1316;--muted:#9aa3ad;--accent:#bfc7cc;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial; background:linear-gradient(180deg,#0b0c0d, #0f1113);color:#e6eef3;line-height:1.5}
+    .container{max-width:920px;margin:40px auto;padding:28px}
+    .card{background:var(--card);border-radius:12px;padding:28px;box-shadow:0 6px 24px rgba(2,6,23,0.6);}
+    .hero{display:flex;gap:24px;align-items:center}
+    .mark{width:92px;height:92px;border-radius:12px;background:var(--glass);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:44px;color:var(--accent);}
+    h1{margin:0;font-size:28px}
+    .subtitle{color:var(--muted);margin-top:6px;font-size:14px}
+    .bio{margin-top:18px;color:#dbe7ef}
+    .grid{display:grid;grid-template-columns:1fr 280px;gap:18px;margin-top:20px}
+    .skills{display:flex;flex-direction:column;gap:8px}
+    .skill-pill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:8px;font-size:13px;color:var(--muted)}
+    .aside{background:rgba(255,255,255,0.02);padding:16px;border-radius:10px}
+    .meta{font-size:13px;color:var(--muted)}
+    a.button{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:8px;background:#111418;color:#eaf0f6;text-decoration:none;font-weight:600}
+    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+    @media (max-width:800px){.grid{grid-template-columns:1fr}.mark{width:72px;height:72px;font-size:36px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="hero">
+        <div class="mark">X</div>
+        <div>
+          <h1>xojadevops</h1>
+          <div class="subtitle">Network engineering • Security (ethical) • DevOps • Web Development • Reverse Engineering • Data Science</div>
+        </div>
+      </div><div class="bio">
+    <p>
+      I build and maintain reliable systems — from low-level network tooling to high-availability web services.
+      My focus areas: network architecture, security engineering (ethical research and lab testing only), DevOps automation,
+      reverse engineering fundamentals, and data-driven solutions. I study how systems fail so I can make them resilient.
+    </p>
+    <p>
+      Daily toolkit: Linux (Arch, Kali for lab/education), Nmap for authorised scanning, container orchestration, CI/CD pipelines,
+      and automation across infrastructure. I share clean notes, small tools, and reproducible setups for learning and collaboration.
+    </p>
+    <p style="font-style:italic;color:var(--muted)">
+      Note: All security work mentioned here is performed ethically and legally — in labs, on owned infrastructure, or with clear permission.
+    </p>
+  </div>
+
+  <div class="grid">
+    <div>
+      <h3 style="margin-top:0">What I publish</h3>
+      <div class="skills">
+        <div class="skill-pill">Infrastructure-as-code examples (Ansible, Terraform)</div>
+        <div class="skill-pill">Small, documented tools & scripts (Bash, Python)</div>
+        <div class="skill-pill">Writeups: network tests, RE notes, tooling guides</div>
+        <div class="skill-pill">Reproducible dev envs (Docker, systemd-nspawn)</div>
+        <div class="skill-pill">Data experiments & visualizations</div>
+      </div>
+
+      <h3 style="margin-top:18px">Get the source</h3>
+      <p class="meta">This site is a single-file static page. You can fork the repo and publish it on any free static host.</p>
+      <a class="button" href="#contact">Contact / Source</a>
+    </div>
+
+    <aside class="aside">
+      <div class="meta"><strong>Contact</strong></div>
+      <div style="margin-top:8px">GitHub: <a href="#" style="color:var(--accent)">github.com/xojadevops</a></div>
+      <div style="margin-top:6px">Telegram: <span style="color:var(--accent)">https://t.me/+_smjKMiaRrZiNDRi</span></div>
+      <div style="margin-top:6px">Email: <span style="color:var(--accent)">xojadevops@gmail.com</span></div>
+
+      <div style="margin-top:12px" class="meta"><strong>Deploy options</strong></div>
+      <div style="margin-top:8px" class="meta">GitHub Pages • Netlify</div>
+    </aside>
+  </div>
+
+  <footer id="contact">Made by xojadevops — source available. Replace links above with real ones and push to your Git provider to deploy.</footer>
+</div>
+
+  </div>
+</body>
+</html>
